@@ -17,7 +17,9 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
+       
         List {
+            Text("Hellow,SwiftUI!")
             ForEach(items) { item in
                 Text("Item at \(item.timestamp!, formatter: itemFormatter)")
             }
